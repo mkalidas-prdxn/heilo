@@ -1,1 +1,520 @@
 /*.*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+
+/*------------------------------------------------------------------
+  [Table of contents]
+  * To keep an overview of structure of your code, we make use of table of 
+  * content. Table of content is use display the overall tree structure of your
+  * Layout. 
+  * (NOTE: Remove this commented code once you start developing the code.
+  * Remove the following table of content and add your own as this is just and 
+  * example to let you know)
+
+  1. CSS Reset Code
+    1.1. Eric Meyers Reset/HTML5 display-role reset for older browsers
+    1.2. Clear Fix
+    1.3. Font class declaration
+  2. Body
+  3. Header / .header
+    2.1. Navigation / .navbar
+  4. Content / .content
+    4.1. Left column / .leftcolumn
+    4.2. Right column / .rightcolumn
+    4.3. Sidebar / .sidebar
+      4.3.1. RSS / .rss
+      4.3.2. Search / .search
+      4.3.3. Boxes / .box
+      4.3.4. Sideblog / .sideblog
+      4.3.5. Advertisements / .ads
+  5. Footer / .footer
+  ------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  [Color codes]
+  * Mention the color code you have used in your html document for the respective
+  * elements given as follow. 
+  * (NOTE: Remove this commented code once you start developing the code. 
+  * Remove the following color code and add your own as this is just and 
+  * example to let you know)
+
+  Header nav: #e5e5df (Cararra)
+  Header nav a (hover): #fff (white)
+  Header nav a (active): #fff (white)
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  [Typography]
+  * Mention the Typography you have used in your html document for the respective
+  * elements given as follow.
+  * (NOTE: Remove this commented code once you start developing the code. 
+  * Remove the following typography and add your own as this is just and 
+  * example to let you know)
+
+  Header nav a: 16px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  View-register li a : 12px 'Futura Bold', 'Gill Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  -------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================================================================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+/* 1.3. Font class declaration
+   ========================================================================== */
+/*
+ * Mention the font property (eg: font-family, font-size, font-weight, font-style
+ * etc) that have been commonly used in the html document. Make a class of it and
+ * apply to the element wherever it is needed. If any single property in changed,
+ * then override only that property in the particular class which is used for the
+ * element.
+ * (NOTE: Remove this commented code once you start 
+ * developing the code. Remove the following font class and add your own
+ * as this is just and example to let you know. If there is only one font family
+ * followed throughout the site, then menstion the font property in body. No need
+ * of creating an extra class for it) */
+
+.futura-bold-font {
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+*,*::before,*::after{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* 
+==========================================================================
+   2. CSS Body
+   ==========================================================================  */
+body {font-family: 'Oxygen', sans-serif;}
+ul {list-style-type: none;}
+
+a {
+  color: #000;
+  text-decoration: none;  
+}
+
+.head-top {
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: 0.5;
+}
+
+.head {
+  font-size: 27px;
+  letter-spacing: 2px;
+  color: #3c3a3a;
+}
+/* ==========================================================================
+   3. CSS Header
+   ==========================================================================   */
+
+header .wrapper { 
+  width: 97.3782772%;
+  margin: 2.69662921% 1.34831461% auto 1.34831461%;
+  /* margin-top: 2.69662921%;
+  margin-left: 1.
+  margin-bottom: 10px;34831461%;   */
+  position: absolute;
+}
+
+header h1 {
+  float: left;  
+  color: #fff;
+  font-size: 19px;
+  opacity: 1;
+}
+
+header h1 span {  
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+header .menu {
+  font-size: 14px;
+  float: right;
+  color: #fff;
+  cursor: pointer;  
+  letter-spacing: 2px;
+}
+
+header nav::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu-items {
+  display: none;
+}
+
+/* ==========================================================================
+   4. CSS Main
+   ==========================================================================   */
+
+
+/* 4.1. Banner section
+   ========================================================================== */
+.banner .img:not(.img1) { display: none;}
+
+.banner img {
+  width: 100%;
+  height: 100vh; 
+}
+.banner .wrapper {overflow: hidden;}
+
+.content {
+  height: 60.560994vh;
+  margin: auto;
+  margin-top: 35.4938272vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;  
+}
+
+.content h2 {
+  color: #fff;
+  letter-spacing: 2.5px;
+  opacity: 1;
+  text-align: center;
+}
+
+.content h2 span { opacity: 0.7; }
+ 
+.content .top::after {
+  content: '';
+  width: 19.5571956%;
+  height: 1px;
+  margin: 4.62962963vh auto 1.08024691vh auto;
+  display: block;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.content .heading { font-size: 100px; }
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  display: inline-block;
+  background-color: #bbb;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.content .dots {
+  margin-top: 20.9506173vh;
+  text-align: center;
+}
+
+.wrapper {overflow: hidden;}
+
+.content {
+  margin-bottom: 0px;
+}
+
+/* 4.2. Cards section
+   ========================================================================== */
+.cards { margin: auto;}
+
+.cards .wrapper {
+  height: 800px;
+  padding: 7% 7.02781845%;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f2f2f2;  
+}
+
+.card { background-color: #fff;}
+
+.card img { width: 100%;}
+
+.card h3 {
+  opacity: 0.8;
+  text-align: center;
+}
+
+.card-info .head-top::after {
+  content: '';
+  height: 1px;
+  width: 57%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  opacity: 0.7;
+  background-color: #000;
+}
+
+.card p {
+  margin-top: 7.65864333%;
+  margin-bottom: 7.65864333%;
+  opacity: 0.4;
+  text-align: left;
+}
+.cards .card1 {
+  margin-right: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 547px;
+          flex: 0 1 547px;
+}
+
+.cards .card2 {
+  margin-left: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 547px;
+          flex: 0 1 547px;
+}
+
+.card-info { padding: 8.12568218% 8.22669104% ;}
+.card .cta {text-align: center;}
+
+.card .cta {
+  margin-top: 9.85%;
+  margin-bottom: 2.19%;
+}
+
+.card a {
+  padding: 10px 21px; 
+  border: 2px solid #d9d9d9;
+  font-size: 13px;
+  opacity: 0.8; 
+}
+.card a:hover {background-color: #e0dede;}
+.card{ margin-top: 10px;}
+
+/* 4.3. Banner2 section
+   ========================================================================== */
+.banner2 .wrapper {
+  height: 240px;
+  padding-top: 90px;
+  background-image: url("../images/bg1.jpg");
+  text-align: center;
+}
+
+.banner2 .head-top {font-size: 10px;}
+
+.banner2 .head-top::after {
+  content: '';
+  height: 1px;
+  width: 45%;
+  margin: 12px auto;
+  display: block;
+  background-color: #fff;
+  opacity: 0.7;
+}
+.banner2 h3 {color: #fff;}
+.banner2 p {color: #fff;}
+
+/* 4.4. Gallery section
+   ========================================================================== */
+.gallery { background-color: #f2f2f2;}
+
+.gallery .head-top::after {
+  content: '';
+  height: 1px;
+  width: 45%;
+  display: block;
+  margin: 12px auto;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.gallery h3 { text-align: center;}
+.gallery .wrapper {  padding: 6.96% 5.32938564%;}
+
+.gallery-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;  
+}
+
+.gallery-img figure {
+  width: 560px;
+  margin: 1.73985087%;
+  -webkit-box-flex: 45%;
+      -ms-flex: 45%;
+          flex: 45%;
+}
+
+.gallery-img img {
+  border: 15px solid #fff;
+  width: 100%;
+}
+/* ==========================================================================
+   5. CSS Footer
+   ==========================================================================   */
+
+footer .wrapper {
+  height: 217px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #000;
+  text-align: center;
+}
+
+footer li {display: inline-block;}
+
+.fab {
+  padding: 10px;
+  color: #80807e;
+  font-size: 25px;
+}
+
+.fab:hover {color: #e6e6e4;}
+.far:hover {color: #e6e6e4;}
+
+.far {
+  padding: 10px;
+  color: #80807e;
+  font-size: 25px;
+}
+
+footer a {color: #fff;}
+
+footer p {
+  padding: 35px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+
+
+/* ==========================================================================
+   6. CSS Media Queries
+   ==========================================================================   */
+@media screen and (max-width: 995px){
+  .cards .wrapper {height: 700px;}  
+}
+
+@media screen and (max-width: 767px){
+  .gallery-img figure{   
+    margin: 1.73985087%; 
+    -webkit-box-flex: 50%; 
+        -ms-flex: 50%; 
+            flex: 50%;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .content h2 {font-size: 14px;}
+  .content .heading { font-size: 80px; }
+  .cards .wrapper {
+    height: 1600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards .card1 {margin-right: 0px;  }
+  .cards .card2 {margin-left: 0px;  }
+}
+
+@media screen and (max-width: 480px){
+  .content h2 {font-size: 13px;}
+  .content .heading { font-size: 60px; }
+  .gallery-img img { border: 10px solid #fff;}
+}
