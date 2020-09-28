@@ -387,7 +387,7 @@ header nav::after {
 .banner2 .wrapper {
   height: 240px;
   padding-top: 90px;
-  background-image: url(assets/images/bg1.jpg);
+  background-image: url("../images/bg1.jpg");
   text-align: center;
 }
 
